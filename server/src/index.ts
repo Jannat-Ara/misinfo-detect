@@ -1,0 +1,31 @@
+import "dotenv/config";
+import express from "express";
+import cors from "cors";
+import { databaseConnection } from "./config/database.js";
+import { notFound, errorHandler } from "./middleware/errorHandler.js";
+
+// Routers
+
+
+const app = express();
+const PORT = Number(process.env.PORT) || 5000;
+
+// Global middleware
+app.use(cors());
+app.use(express.json());
+
+// Main routers
+
+// app.use("/api/lessons", lessonRouter);
+// app.use("/api/users", userRouter);
+// app.use("/api/attempts", attemptRouter);
+// app.use("/api/stats", statsRouter);
+
+// These must come AFTER all routers
+app.use(notFound);
+app.use(errorHandler);
+
+// Start the server only after the database connects
+databaseConnection(() => {
+  app.listen(PORT, () => console.log(`Server is running on http://localhost:${PORT}`));
+});
