@@ -1,0 +1,12 @@
+$kind: http-request
+url: 127.0.0.1:8000/cart/view
+method: POST
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWFmNzFkZDk4ZDQ4ZWFlNjA1OWE0NjEiLCJ1c2VybmFtZSI6InJlZ3VsYXJVc2VyIiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwicmVzZXRQYXNzd29yZCI6ZmFsc2UsInJlc2V0VG9rZW4iOm51bGwsInVzZXIiOm51bGwsIl9fdiI6MCwiaWF0IjoxNzA1OTk3Mjk0LCJleHAiOjE3MDYwMDA4OTR9.nryQ6xqhGLvlSz3wlq2f1CZkIP3iEeKboG3SrbH5Rkk
+settings: {}
+order: 4000

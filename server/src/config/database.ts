@@ -12,6 +12,7 @@ export const databaseConnection = async (callback: () => void): Promise<void> =>
   try {
     await mongoose.connect(url);
     console.log("Database connected successfully.");
+    console.log(`Connected to ${mongoose.connection.host} / database: ${mongoose.connection.name}`);
     callback();
   } catch (error) {
     console.error("Database connection failed:", error);

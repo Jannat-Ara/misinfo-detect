@@ -1,0 +1,5 @@
+$kind: http-request
+url: 127.0.0.1:8000/video/delete/654df5b7d3431ee28206b2d3
+method: DELETE
+settings: {}
+order: 1000

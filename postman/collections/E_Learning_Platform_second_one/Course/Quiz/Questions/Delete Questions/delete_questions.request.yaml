@@ -1,0 +1,5 @@
+$kind: http-request
+url: 127.0.0.1:8000/questions/delete/6552f3d13c61e26d052993b3/6552f4093c61e26d052993b8
+method: DELETE
+settings: {}
+order: 1000

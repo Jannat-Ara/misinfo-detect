@@ -1,0 +1,16 @@
+$kind: http-request
+url: 127.0.0.1:8000/auth/admin-sign-up
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"fullname\":\"Admin One\",\r
+
+    \    \"email\":\"normalAdmin@adminbjit.edu\",\r
+
+    \    \"password\":\"Adminone@123\"\r
+
+    }"
+settings: {}
+order: 1000

@@ -1,0 +1,18 @@
+$kind: http-request
+url: 127.0.0.1:8000/reviews/addtoReviewandRating
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"user\":\"6505e507cc5ccf642c1e1e86\",\r
+
+    \    \"book\":\"650558a923432630cb392e03\",\r
+
+    \    \"review\":\"I loved this book!\",\r
+
+    \    \"rating\":3.5\r
+
+    }"
+settings: {}
+order: 1000

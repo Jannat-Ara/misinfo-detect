@@ -1,0 +1,20 @@
+$kind: http-request
+url: 127.0.0.1:8000/transactions/checkout
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \r
+
+    \    \"user\":\"6509d4873da0c674a3e69633\",\r
+
+    \    \"cart\":\"650a247a31bb4835e5bc34ea\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRWxvbiBNdXNrIiwiZW1haWwiOiJlbG9ubXVza0BzcGFjZXguY29tIiwicm9sZSI6MiwidmVyaWZpZWQiOnRydWUsInVzZXIiOnsibmFtZSI6IkVsb24gTXVzayIsImVtYWlsIjoiZWxvbm11c2tAc3BhY2V4LmNvbSIsInBob25lIjoiNTU1LTU1NS01NTU1IiwidmVyaWZpZWQiOnRydWV9LCJfX3YiOjAsImlhdCI6MTY5NTE2NzQ1OSwiZXhwIjoxNjk1MTcxMDU5fQ.6QnQ20u4-sDAK3jy0CenjOus_E1QVZFxajN4jmQ8-jI
+settings: {}
+order: 1000

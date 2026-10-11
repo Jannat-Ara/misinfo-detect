@@ -1,0 +1,18 @@
+$kind: http-request
+url: 127.0.0.1:8000/lessons/create
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"lessonNumber\":2,\r
+
+    \  \"title\": \"Chapter_02\",\r
+
+    \  \"description\": \"Introduction to HTML and CSS:part-02\"\r
+
+    \ \r
+
+    }\r\n"
+settings: {}
+order: 1000

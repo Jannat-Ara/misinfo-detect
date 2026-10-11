@@ -1,0 +1,16 @@
+$kind: http-request
+url: 127.0.0.1:8000/video/create?lessonID=655c3bb82980d7e9d15185b7
+method: POST
+queryParams:
+  lessonID: 655c3bb82980d7e9d15185b7
+body:
+  type: formdata
+  content:
+    - type: text
+      key: caption
+      value: What is react part:02
+    - type: file
+      key: image
+      src: /C:/Users/BJIT/Downloads/React_Intro_02.mp4
+settings: {}
+order: 1000

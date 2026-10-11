@@ -1,0 +1,12 @@
+$kind: http-request
+url: 127.0.0.1:8000/carts/viewCart
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"userID\":\"6507010c288202cff3ad398f\"\r
+
+    }"
+settings: {}
+order: 3000

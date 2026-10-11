@@ -1,0 +1,36 @@
+$kind: http-request
+url: 127.0.0.1:8000/auth/sign-up
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Elon Musk\",\r
+
+    \  \"email\": \"elonmusk@example.com\",\r
+
+    \  \"password\": \"Tesla@123\",\r
+
+    \  \"phone\": \"555-888-2222\",\r
+
+    \  \"address\": {\r
+
+    \    \"house\": \"123\",\r
+
+    \    \"road\": \"SpaceX Street\",\r
+
+    \    \"area\": \"Tech Valley\",\r
+
+    \    \"city\": \"Los Angeles\",\r
+
+    \    \"country\": \"USA\"\r
+
+    \  },\r
+
+    \  \"role\": 2,\r
+
+    \  \"verified\": true\r
+
+    }\r\n"
+settings: {}
+order: 1000

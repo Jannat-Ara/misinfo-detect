@@ -1,0 +1,9 @@
+$kind: http-request
+url: 127.0.0.1:8000/users/viewProfile
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmdWxsbmFtZSI6IkRhdmlkIE1pbGxlciIsImVtYWlsIjoiZGF2aWQubWlsbGVyQGdtYWlsLmNvbSIsInZlcmlmaWVkIjpmYWxzZSwicm9sZSI6InN0dWRlbnQiLCJ1c2VyIjp7Il9pZCI6IjY1NWVjMzRkMWM3OTZiNDg0Nzg1ODQ0ZiIsImZ1bGxuYW1lIjoiRGF2aWQgTWlsbGVyIiwiZW1haWwiOiJkYXZpZC5taWxsZXJAZ21haWwuY29tIiwicm9sZSI6InN0dWRlbnQifSwiX192IjowLCJpYXQiOjE3MDEwMDQ0MjksImV4cCI6MTcwMTAwODAyOX0.xwbTL0EdP17U5Kqw1bs_Eyacs_5D4yMLijTKYCzLrOo
+settings: {}
+order: 1000

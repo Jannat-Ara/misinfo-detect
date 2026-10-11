@@ -1,0 +1,22 @@
+$kind: http-request
+url: 127.0.0.1:8000/questions/create
+method: POST
+body:
+  type: json
+  content: "\r
+
+    \  {\r
+
+    \    \"quizId\": \"6552f3d13c61e26d052993b3\",\r
+
+    \     \"text\": \"What is JSX in the context of React in a MERN stack?\",\r
+
+    \  \"options\": [\"JavaScript XML\", \"JSON Syntax Extension\", \"Java Server X\", \"React Component Format\"],\r
+
+    \  \"correctOptionIndex\": 0\r
+
+    \  }\r
+
+    \r\n"
+settings: {}
+order: 1000

@@ -1,0 +1,16 @@
+$kind: http-request
+url: 127.0.0.1:8000/transactions/viewTransaction
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \r
+
+    \    \"user\":\"652421950b0562baa54e61a6\",\r
+
+    \    \"cart\":\"652825c01813ade7ea675059\"\r
+
+    }"
+settings: {}
+order: 2000

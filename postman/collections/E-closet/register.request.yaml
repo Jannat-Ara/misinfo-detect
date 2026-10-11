@@ -1,0 +1,18 @@
+$kind: http-request
+url: https://102h4rlyh1.execute-api.us-east-2.amazonaws.com/dev/register
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"John Doe\",\r
+
+    \    \"email\": \"john.doe@example.com\",\r
+
+    \    \"password\": \"StrongPass123!\"\r
+
+    }"
+auth:
+  type: noauth
+settings: {}
+order: 7000

@@ -1,0 +1,18 @@
+$kind: http-request
+url: 127.0.0.1:8000/carts/addtoCart
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"book\":\"651864fd351ab8f1034231ee\",\r
+
+    \    \"quantity\":5\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI0MjE5NTBiMDU2MmJhYTU0ZTYxYTkiLCJuYW1lIjoiRWxvbiBNdXNrIiwiZW1haWwiOiJlbG9ubXVza0BleGFtcGxlLmNvbSIsInJvbGUiOjIsInZlcmlmaWVkIjp0cnVlLCJ1c2VyIjp7Il9pZCI6IjY1MjQyMTk1MGIwNTYyYmFhNTRlNjFhNiIsIm5hbWUiOiJFbG9uIE11c2siLCJlbWFpbCI6ImVsb25tdXNrQGV4YW1wbGUuY29tIiwicm9sZSI6MiwicGhvbmUiOiI1NTUtODg4LTIyMjIiLCJ2ZXJpZmllZCI6dHJ1ZX0sIl9fdiI6MCwiaWF0IjoxNjk2ODY2NzU4LCJleHAiOjE2OTY4NzAzNTh9.nxfHqLofFvIUNM2REqzrLM8NpaUzLB-wPGETa2smOt0
+settings: {}
+order: 1000

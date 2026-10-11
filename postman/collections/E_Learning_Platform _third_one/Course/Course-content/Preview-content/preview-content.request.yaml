@@ -1,0 +1,5 @@
+$kind: http-request
+url: 127.0.0.1:8000/video/view/video_01.mp4
+method: GET
+settings: {}
+order: 1000

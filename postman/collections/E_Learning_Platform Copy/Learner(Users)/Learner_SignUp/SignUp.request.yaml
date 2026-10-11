@@ -1,0 +1,16 @@
+$kind: http-request
+url: 127.0.0.1:8000/auth/sign-up
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"fullname\":\"Elena Martinez\",\r
+
+    \    \"email\":\"elena.martinez1@example.com\",\r
+
+    \    \"password\":\"elenaMartin@1234\"\r
+
+    }"
+settings: {}
+order: 1000

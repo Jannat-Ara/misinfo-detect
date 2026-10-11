@@ -1,0 +1,7 @@
+$kind: http-request
+url: 127.0.0.1:8000/products/deleteItem?id=101
+method: DELETE
+queryParams:
+  id: "101"
+settings: {}
+order: 4000

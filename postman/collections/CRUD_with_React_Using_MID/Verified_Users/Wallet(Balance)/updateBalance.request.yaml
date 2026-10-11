@@ -1,0 +1,14 @@
+$kind: http-request
+url: 127.0.0.1:8000/users/updateBalance
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"user\":\"6505e507cc5ccf642c1e1e86\",\r
+
+    \    \"amount\":1000\r
+
+    }"
+settings: {}
+order: 1000

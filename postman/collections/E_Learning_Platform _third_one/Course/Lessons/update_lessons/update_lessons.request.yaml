@@ -1,0 +1,16 @@
+$kind: http-request
+url: 127.0.0.1:8000/lessons/edit
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"lessonID\":\"654dc107eb27580d7de3ebc3\",\r
+
+    \    \"title\":\"Chapter_02\"\r
+
+    }"
+auth:
+  type: noauth
+settings: {}
+order: 1000

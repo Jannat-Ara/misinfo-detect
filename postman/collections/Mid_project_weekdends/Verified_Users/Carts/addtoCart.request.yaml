@@ -1,0 +1,16 @@
+$kind: http-request
+url: 127.0.0.1:8000/carts/addtoCart
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"userID\":\"6507010c288202cff3ad398f\",\r
+
+    \    \"book\":\"650711fb3a85e1846532e956\",\r
+
+    \    \"quantity\":2\r
+
+    }"
+settings: {}
+order: 1000

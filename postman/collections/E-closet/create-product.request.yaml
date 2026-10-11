@@ -1,0 +1,32 @@
+$kind: http-request
+url: https://102h4rlyh1.execute-api.us-east-2.amazonaws.com/dev/products
+method: POST
+body:
+  type: json
+  content: " {\r
+
+    \        \"_id\": \"aaaac\",\r
+
+    \        \"name\": \"Girls Round Neck Cotton Top\",\r
+
+    \        \"description\": \"A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.\",\r
+
+    \        \"price\": 220,\r
+
+    \        \"image\": [\"https://drive.google.com/file/d/105efM_cSgDi4hrPmTX78m5awVZkAPO8p/view?usp=sharing\"],\r
+
+    \        \"category\": \"Kids\",\r
+
+    \        \"subCategory\": \"Topwear\",\r
+
+    \        \"sizes\": [\"S\", \"L\", \"XL\"],\r
+
+    \        \"date\": 1716234545448,\r
+
+    \        \"bestseller\": true\r
+
+    \    }"
+auth:
+  type: noauth
+settings: {}
+order: 1000

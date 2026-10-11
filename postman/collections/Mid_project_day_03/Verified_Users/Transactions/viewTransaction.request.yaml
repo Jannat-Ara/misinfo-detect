@@ -1,0 +1,14 @@
+$kind: http-request
+url: 127.0.0.1:8000/transactions/viewTransaction
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"transaction\":\"65083cbc49d2d0fdbd6dda5f\",\r
+
+    \    \"user\":\"6505e507cc5ccf642c1e1e86\"\r
+
+    }"
+settings: {}
+order: 2000

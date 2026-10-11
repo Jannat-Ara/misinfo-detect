@@ -1,0 +1,26 @@
+$kind: http-request
+url: 127.0.0.1:8000/users/create
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"username\": \"jane_smith\",\r
+
+    \  \"email\": \"jane.smith@example.com\",\r
+
+    \  \"role\": 3,\r
+
+    \  \"isAdmin\": false,\r
+
+    \  \"firstName\": \"Jane\",\r
+
+    \  \"lastName\": \"Smith\",\r
+
+    \  \"gender\": \"female\",\r
+
+    \  \"phoneNumber\": \"987-654-32101\",\r
+
+    }\r\n"
+settings: {}
+order: 1000

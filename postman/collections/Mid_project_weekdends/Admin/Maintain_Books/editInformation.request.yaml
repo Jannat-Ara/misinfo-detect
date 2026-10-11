@@ -1,0 +1,16 @@
+$kind: http-request
+url: 127.0.0.1:8000/books/editInfo
+method: PATCH
+body:
+  type: json
+  content: "{  \"bookID\":\"650558a923432630cb392e03\",\r
+
+    \r
+
+    \  \"price\": 12.99\r
+
+    \r
+
+    }"
+settings: {}
+order: 2000

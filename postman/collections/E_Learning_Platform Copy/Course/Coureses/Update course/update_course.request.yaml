@@ -1,0 +1,18 @@
+$kind: http-request
+url: 127.0.0.1:8000/courses/edit/65543d9884949193eddae63b
+method: PATCH
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: MERN Stack Web Development:02
+    - type: file
+      key: image
+      src: /C:/Users/BJIT/Downloads/pexels-yulia-ilina-9066471.jpg
+    - type: text
+      key: description
+      value: Master the art of building powerful and scalable web applications with the MERN (MongoDB, Express.js, React, Node.js) stack. This comprehensive course covers everything from setting up your development environment to deploying a full-fledged MERN application. Dive into the world of modern web development and enhance your skills with hands-on projects and real-world examples.
+      disabled: true
+settings: {}
+order: 1000

@@ -1,0 +1,18 @@
+$kind: http-request
+url: 127.0.0.1:8000/lessons/create
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"courseId\":\"655f458c9cec67431f914cac\",\r
+
+    \  \"title\":\"Lesson:02\",\r
+
+    \  \"description\":\"What is JDK and JVM\"\r
+
+    \ \r
+
+    }\r\n"
+settings: {}
+order: 1000

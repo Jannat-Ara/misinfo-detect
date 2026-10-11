@@ -1,0 +1,30 @@
+$kind: http-request
+url: 127.0.0.1:8000/users/editUsersInfo
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"userID\":\"650a169190c42a4337a25f30\",\r
+
+    \  \"address\": {\r
+
+    \    \"house\": \"27\",\r
+
+    \    \"road\": \"Investment Avenue\",\r
+
+    \    \"area\": \"Financial District\",\r
+
+    \    \"city\": \"Tokyo\",\r
+
+    \    \"country\": \"Japan\"\r
+
+    \  }\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSGlyb3NoaSBNaWtpdGFuaSIsImVtYWlsIjoiaGlyb3NoaW1pa2l0YW5pQHJha3V0ZW4uY29tIiwicm9sZSI6MSwidmVyaWZpZWQiOnRydWUsInVzZXIiOnsibmFtZSI6Ikhpcm9zaGkgTWlraXRhbmkiLCJlbWFpbCI6Imhpcm9zaGltaWtpdGFuaUByYWt1dGVuLmNvbSIsInBob25lIjoiNTU1LTc4OS0xMjM0IiwidmVyaWZpZWQiOnRydWV9LCJfX3YiOjAsImlhdCI6MTY5NTE1OTkzOCwiZXhwIjoxNjk1MTYzNTM4fQ.opgLraXOJhtQXeylvDafTAWnmFwJ4lg49tjVCojrI0U
+settings: {}
+order: 2000

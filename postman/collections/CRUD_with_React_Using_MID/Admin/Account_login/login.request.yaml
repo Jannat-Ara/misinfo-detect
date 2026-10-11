@@ -1,0 +1,20 @@
+$kind: http-request
+url: 127.0.0.1:8000/auth/login
+method: POST
+body:
+  type: text
+  content: "{\r
+
+    \  \"email\": \"johnsmith@example.com\",\r
+
+    \  \"password\": \"John@123\"\r
+
+    \r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU29waGlhIEpvaG5zb24iLCJlbWFpbCI6InNvcGhpYWpvaG5zb25AZXhhbXBsZS5jb20iLCJyb2xlIjoyLCJ2ZXJpZmllZCI6dHJ1ZSwidXNlciI6eyJuYW1lIjoiU29waGlhIEpvaG5zb24iLCJlbWFpbCI6InNvcGhpYWpvaG5zb25AZXhhbXBsZS5jb20iLCJwaG9uZSI6IjU1NS05ODctNTY3OCIsInZlcmlmaWVkIjp0cnVlfSwiX192IjowLCJpYXQiOjE2OTY2NzU5NDgsImV4cCI6MTY5NjY3OTU0OH0.bJDO_kdilLfOwEDUGb-tg6-hejoKislXFZQEYI0MSQE
+settings: {}
+order: 1000

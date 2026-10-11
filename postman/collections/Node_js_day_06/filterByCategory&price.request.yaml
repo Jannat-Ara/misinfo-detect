@@ -1,0 +1,8 @@
+$kind: http-request
+url: 127.0.0.1:8000/products/filterBycp?category=electronics&price=200
+method: GET
+queryParams:
+  category: electronics
+  price: "200"
+settings: {}
+order: 7000

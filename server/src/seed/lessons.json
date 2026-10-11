@@ -1,0 +1,550 @@
+[
+  {
+    "lessonNumber": 1,
+    "title": "What Is Misinformation?",
+    "summary": "Learn the difference between misinformation, disinformation, and malinformation, and why false stories spread so fast.",
+    "content": [
+      "Misinformation is false or misleading information shared by someone who believes it is true. They are not trying to trick anyone.",
+      "Disinformation is false information created or spread on purpose to deceive people, often for money, attention, or political influence.",
+      "Malinformation is real information used to cause harm, such as leaking someone's private details or sharing a true fact out of context to hurt someone.",
+      "False stories often spread faster than true ones because they are surprising, emotional, and easy to share without reading."
+    ],
+    "tips": [
+      "Strong emotion (anger, fear, excitement) is a signal to slow down",
+      "Ask: who benefits if I believe this?",
+      "Sharing something false by accident still spreads harm"
+    ],
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "prompt": "Your aunt forwards a post saying drinking hot water every hour cures the flu. She truly believes it and wants to help her family. What is this?",
+        "options": [
+          { "id": "a", "text": "Misinformation" },
+          { "id": "b", "text": "Disinformation" },
+          { "id": "c", "text": "Malinformation" },
+          { "id": "d", "text": "Satire" }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The claim is false, but your aunt is sharing it because she believes it. False + no intent to deceive = misinformation."
+      },
+      {
+        "type": "multiple-choice",
+        "prompt": "A group creates a made-up story about a city mayor and posts it from 50 fake accounts at the same time. What is this?",
+        "options": [
+          { "id": "a", "text": "Misinformation" },
+          { "id": "b", "text": "Disinformation" },
+          { "id": "c", "text": "Malinformation" },
+          { "id": "d", "text": "Breaking news" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The story is invented and spread on purpose using fake accounts. Deliberate deception = disinformation."
+      },
+      {
+        "type": "true-false",
+        "prompt": "True or false: If a post has been shared by thousands of people, it is probably true.",
+        "options": [
+          { "id": "a", "text": "True" },
+          { "id": "b", "text": "False" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Popularity is not proof. False posts often get shared more because they are shocking or emotional."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "title": "Clickbait",
+    "summary": "Learn why some headlines are designed to make you click, not to inform you.",
+    "content": [
+      "Clickbait headlines use curiosity, shock, or strong emotion to get clicks.",
+      "They often hide the key fact so you have to open the article to find out what happened.",
+      "Clickbait is not always completely false, but it usually exaggerates or misleads, and the article often does not deliver what the headline promised."
+    ],
+    "tips": [
+      "ALL CAPS or many exclamation marks",
+      "'You won't believe...' or 'What happened next...' phrasing",
+      "No specific facts in the headline"
+    ],
+    "questions": [
+      {
+        "type": "headline-compare",
+        "prompt": "Which headline is more likely to be clickbait?",
+        "options": [
+          { "id": "a", "text": "City council approves $2M budget for road repairs" },
+          { "id": "b", "text": "You WON'T BELIEVE what the city just did with YOUR money!!!" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Option B hides the actual fact and uses caps and emotional language to bait a click. Option A tells you exactly what happened."
+      },
+      {
+        "type": "multiple-choice",
+        "prompt": "Which of these is the strongest sign of a clickbait headline?",
+        "options": [
+          { "id": "a", "text": "It names the place where the event happened" },
+          { "id": "b", "text": "It hides the main fact to make you curious" },
+          { "id": "c", "text": "It includes a number, like a date or amount" },
+          { "id": "d", "text": "It is written in plain, calm language" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Clickbait works by creating a 'curiosity gap': it withholds the key fact so you feel you must click."
+      },
+      {
+        "type": "true-false",
+        "prompt": "True or false: A clickbait headline is always completely false.",
+        "options": [
+          { "id": "a", "text": "True" },
+          { "id": "b", "text": "False" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Clickbait can be technically true but exaggerated or misleading. The problem is manipulation, not always outright lies."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "title": "Fake Headlines",
+    "summary": "Spot made-up headlines that are designed to look like real news.",
+    "content": [
+      "Fake headlines copy the style of real news so they look believable at a glance.",
+      "Watch for look-alike web addresses, such as a real outlet's name with an extra word or an unusual ending like '.news-alerts.co'.",
+      "Real major news is usually reported by several trusted outlets. If only one unknown site has the story, be careful.",
+      "Fake headlines often sound overly certain ('PROVES', 'CONFIRMED', 'EXPOSED') and leave out details like names, dates, or sources."
+    ],
+    "tips": [
+      "Check the web address carefully",
+      "Search whether other trusted outlets report the same story",
+      "Be suspicious of absolute words like 'PROVES' or 'ALWAYS'"
+    ],
+    "questions": [
+      {
+        "type": "headline-compare",
+        "prompt": "Which headline is more trustworthy?",
+        "options": [
+          { "id": "a", "text": "Scientists PROVE coffee makes you live forever" },
+          { "id": "b", "text": "Study of 10,000 adults links moderate coffee intake to slightly lower heart risk" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Option B gives specific, measured details and avoids exaggeration. Option A makes an impossible, absolute claim."
+      },
+      {
+        "type": "multiple-choice",
+        "prompt": "You see 'BREAKING: All state universities closing tomorrow' on a site called rivertonherald.news-alerts.co. What should you do first?",
+        "options": [
+          { "id": "a", "text": "Share it right away to warn your friends" },
+          { "id": "b", "text": "Check your university's official website and other news outlets" },
+          { "id": "c", "text": "Read the comments to see if people believe it" },
+          { "id": "d", "text": "Trust it because it says 'BREAKING'" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Go to the official source. The odd web address and dramatic claim are red flags, and a real closure would be on the university's own site."
+      },
+      {
+        "type": "headline-compare",
+        "prompt": "Which headline is more trustworthy?",
+        "options": [
+          { "id": "a", "text": "Riverton Public Library extends weekend hours starting March 1, city announces" },
+          { "id": "b", "text": "Government HIDING the truth about library closures - share before it's deleted!" }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Option A names who announced it and when. Option B uses fear, urgency, and no evidence."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "title": "Manipulated Images",
+    "summary": "Learn how photos can be edited, AI-generated, or taken out of context to mislead you.",
+    "content": [
+      "Images can mislead in three main ways: they can be edited, fully generated by AI (including deepfakes), or real photos shared with a false caption.",
+      "Out-of-context photos are the most common trick: a real photo from years ago or another country is shared as if it shows today's event.",
+      "Clues of editing or AI generation include strange shadows or lighting, warped backgrounds, extra or missing fingers, and blurry or nonsense text on signs.",
+      "A reverse image search (for example, Google Lens or TinEye) can show where and when a photo first appeared online."
+    ],
+    "tips": [
+      "Look closely at hands, text, shadows, and reflections",
+      "Use reverse image search to find the original",
+      "A real photo can still have a fake caption"
+    ],
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "prompt": "A viral photo claims to show a shark swimming on a flooded highway after yesterday's storm. A reverse image search shows the same photo was posted in 2017 about a different storm. What is the problem?",
+        "options": [
+          { "id": "a", "text": "Nothing, the photo is real" },
+          { "id": "b", "text": "It is an old photo shared out of context" },
+          { "id": "c", "text": "It is definitely AI-generated" },
+          { "id": "d", "text": "It is satire" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Even if the photo is not edited, using a 2017 image to describe yesterday's storm is misleading. That is an out-of-context image."
+      },
+      {
+        "type": "multiple-choice",
+        "prompt": "Which detail most strongly suggests a photo of a crowd was generated by AI?",
+        "options": [
+          { "id": "a", "text": "The photo is a little blurry" },
+          { "id": "b", "text": "Some people have extra fingers and the signs have warped, unreadable text" },
+          { "id": "c", "text": "The colors are very bright" },
+          { "id": "d", "text": "It was taken at night" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "AI image tools often struggle with hands and text. Blurriness, bright colors, or night lighting happen in real photos too."
+      },
+      {
+        "type": "true-false",
+        "prompt": "True or false: If a photo has not been edited, the caption attached to it must be accurate.",
+        "options": [
+          { "id": "a", "text": "True" },
+          { "id": "b", "text": "False" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A completely real photo can be paired with a false caption about where, when, or what it shows."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "title": "Unreliable Sources",
+    "summary": "Figure out whether a website or account is a source you can trust.",
+    "content": [
+      "Trustworthy sources usually have a clear 'About' page, contact information, named writers, and a policy for correcting mistakes.",
+      "Warning signs include no named authors, lots of pop-up ads, emotional language everywhere, and no links to evidence.",
+      "Some sites are satire on purpose. Their stories are jokes, but screenshots of them often get shared as real news.",
+      "Fact-checkers use 'lateral reading': instead of judging a site by how it looks, they open new tabs and search what other trusted sources say about it."
+    ],
+    "tips": [
+      "Look for an About page and named authors",
+      "Read laterally: search the source's name in a new tab",
+      "A professional design does not mean a reliable source"
+    ],
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "prompt": "You want to check a claim about a new vaccine study. Which source is most reliable?",
+        "options": [
+          { "id": "a", "text": "An anonymous blog called 'TruthSeeker365'" },
+          { "id": "b", "text": "The published study itself or an official public health agency" },
+          { "id": "c", "text": "A viral video from a lifestyle influencer" },
+          { "id": "d", "text": "A comment in an online forum" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Go to the original research or an official health agency. The others are second-hand and have no accountability."
+      },
+      {
+        "type": "multiple-choice",
+        "prompt": "What does 'lateral reading' mean?",
+        "options": [
+          { "id": "a", "text": "Reading the whole article slowly from top to bottom" },
+          { "id": "b", "text": "Leaving the site and searching what other trusted sources say about it" },
+          { "id": "c", "text": "Reading only the headline and the first paragraph" },
+          { "id": "d", "text": "Reading the comments under the article" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Lateral reading means checking a source from the outside, in other tabs, instead of trusting what the site says about itself."
+      },
+      {
+        "type": "true-false",
+        "prompt": "True or false: A website with a professional, modern design is a trustworthy source.",
+        "options": [
+          { "id": "a", "text": "True" },
+          { "id": "b", "text": "False" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Anyone can build a polished website cheaply. Design tells you nothing about accuracy."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "title": "Checking Authors",
+    "summary": "Learn how to check who wrote something and whether they are qualified to write it.",
+    "content": [
+      "Before trusting an article, check who wrote it. Is there a real, named author?",
+      "Look at whether the author's expertise matches the topic. A doctor writing about medicine is more relevant than a doctor writing about car engines.",
+      "Search the author's name. Do they have other published work? Are they a real person?",
+      "Watch for conflicts of interest: an author who sells a product may not be neutral when writing about it."
+    ],
+    "tips": [
+      "Search the author's name in a new tab",
+      "Check that their expertise fits the topic",
+      "Ask: does the author make money if I believe this?"
+    ],
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "prompt": "An article about climate science is written by 'Dr. Max Steel'. His bio lists no university, and a search shows he sells 'climate detox' supplements. What is the main concern?",
+        "options": [
+          { "id": "a", "text": "His name sounds unusual" },
+          { "id": "b", "text": "His credentials cannot be verified and he has a conflict of interest" },
+          { "id": "c", "text": "The article is too short" },
+          { "id": "d", "text": "There is no concern" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Unverifiable credentials plus a product to sell are two big red flags about this author."
+      },
+      {
+        "type": "multiple-choice",
+        "prompt": "Which author is most credible for an article about nutrition?",
+        "options": [
+          { "id": "a", "text": "Registered dietitian, 12 years at Riverton Hospital, published in nutrition journals" },
+          { "id": "b", "text": "Wellness enthusiast and lifestyle influencer" },
+          { "id": "c", "text": "Anonymous staff writer" },
+          { "id": "d", "text": "Famous actor who follows a special diet" }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Option A has relevant training, real experience, and published work you can check."
+      },
+      {
+        "type": "true-false",
+        "prompt": "True or false: An article with no author named should be trusted less until you can confirm the information somewhere else.",
+        "options": [
+          { "id": "a", "text": "True" },
+          { "id": "b", "text": "False" }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Without an author, nobody is accountable for the content. Confirm it with another trusted source first."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "title": "Checking Dates",
+    "summary": "Avoid being fooled by old news shared as if it happened today.",
+    "content": [
+      "Old stories often come back online and get shared as if they are new. This is sometimes called 'zombie news'.",
+      "Always check the publish date (and update date) on an article, usually near the headline or at the bottom.",
+      "Screenshots usually cut off the date, so a screenshot alone can't tell you when something was published.",
+      "Even an accurate old story can mislead today, because situations, rules, and facts change over time."
+    ],
+    "tips": [
+      "Find the publish date before sharing",
+      "Be careful with screenshots: they hide dates",
+      "Ask: is this still true today?"
+    ],
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "prompt": "A friend shares 'Huge storm cancels all flights at Riverton Airport!' The article link is dated 2019. What is the best response?",
+        "options": [
+          { "id": "a", "text": "Cancel your own flight right away" },
+          { "id": "b", "text": "Point out that the article is old and check the airport's current status" },
+          { "id": "c", "text": "Share it with more people" },
+          { "id": "d", "text": "Ignore the date because the story is real" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The story may have been true in 2019, but it says nothing about today. Check the current, official source."
+      },
+      {
+        "type": "multiple-choice",
+        "prompt": "Where should you look to find when an article was really published?",
+        "options": [
+          { "id": "a", "text": "The time your friend shared it on social media" },
+          { "id": "b", "text": "The publish date on the article itself" },
+          { "id": "c", "text": "The number of likes it has" },
+          { "id": "d", "text": "Today's date" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "When someone shared a story is not when it was published. Check the date on the original article."
+      },
+      {
+        "type": "true-false",
+        "prompt": "True or false: A screenshot of an article always shows when it was first published.",
+        "options": [
+          { "id": "a", "text": "True" },
+          { "id": "b", "text": "False" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Screenshots often crop out the date, and they can be edited. Find the original article."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 8,
+    "title": "Fact-Checking",
+    "summary": "Use simple, practical steps to check whether a claim is true.",
+    "content": [
+      "A simple method for checking claims is SIFT: Stop, Investigate the source, Find better coverage, and Trace claims back to the original context.",
+      "Stop: if a post makes you feel a strong emotion, pause before you react or share.",
+      "Find better coverage: see whether trusted outlets or professional fact-checkers (such as Snopes, PolitiFact, FactCheck.org, or AP Fact Check) have covered it.",
+      "Trace claims: find the original study, quote, or photo. Claims often change as they are passed along."
+    ],
+    "tips": [
+      "Remember SIFT: Stop, Investigate, Find, Trace",
+      "Go back to the original source",
+      "Use reverse image search for photos"
+    ],
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "prompt": "A post makes you really angry and you want to share it right away. Using SIFT, what should you do first?",
+        "options": [
+          { "id": "a", "text": "Stop and pause before reacting" },
+          { "id": "b", "text": "Share it quickly before it disappears" },
+          { "id": "c", "text": "Write an angry comment" },
+          { "id": "d", "text": "Send it to a group chat" }
+        ],
+        "correctAnswer": "a",
+        "explanation": "The first step of SIFT is Stop. Strong emotions make us share without checking."
+      },
+      {
+        "type": "multiple-choice",
+        "prompt": "A post says a 'study' shows chocolate improves exam scores by 50%. What is the best way to check it?",
+        "options": [
+          { "id": "a", "text": "Trust it because it mentions a study" },
+          { "id": "b", "text": "Trace it to the original study and read what it actually found" },
+          { "id": "c", "text": "Count how many people liked the post" },
+          { "id": "d", "text": "Ask a friend who likes chocolate" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Claims about studies are often exaggerated. The original study may have found something much smaller, or nothing at all."
+      },
+      {
+        "type": "multiple-choice",
+        "prompt": "Which tool is best for checking whether a photo appeared online earlier?",
+        "options": [
+          { "id": "a", "text": "A spell checker" },
+          { "id": "b", "text": "Reverse image search" },
+          { "id": "c", "text": "A VPN" },
+          { "id": "d", "text": "Taking a screenshot" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Reverse image search finds earlier copies of a photo and shows where and when it first appeared."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 9,
+    "title": "Social Media Misinformation",
+    "summary": "Understand how false content spreads on social media and how to respond.",
+    "content": [
+      "Social media feeds often show posts that get the most reactions, and shocking or angry posts get a lot of reactions, true or not.",
+      "Bots and fake accounts can make a claim look more popular than it really is.",
+      "Urgent phrases like 'SHARE BEFORE THEY DELETE THIS' are designed to make you skip checking.",
+      "Screenshots of posts can be faked easily, and a verified badge only shows identity or a paid subscription, not accuracy.",
+      "You can help: do not share unverified posts, report false content, and correct friends kindly with a reliable source."
+    ],
+    "tips": [
+      "Urgency is a red flag",
+      "Check the account's age and posting history",
+      "Correct kindly and include a source"
+    ],
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "prompt": "A post from a 2-day-old account says 'SHARE BEFORE THEY DELETE THIS!! Doctors don't want you to know...' and has 40,000 shares. What should you do?",
+        "options": [
+          { "id": "a", "text": "Share it, because 40,000 people can't be wrong" },
+          { "id": "b", "text": "Don't share it; look for reliable sources and report it if it is false" },
+          { "id": "c", "text": "Comment asking if it's true" },
+          { "id": "d", "text": "Screenshot it and post it yourself" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A brand-new account, urgent language, and a 'secret' claim are classic red flags. Share counts can be boosted by bots."
+      },
+      {
+        "type": "multiple-choice",
+        "prompt": "Which is the strongest sign that an account might be a bot?",
+        "options": [
+          { "id": "a", "text": "It posts photos of pets" },
+          { "id": "b", "text": "It posts hundreds of times a day, has no profile photo, and a username with random numbers" },
+          { "id": "c", "text": "It follows news accounts" },
+          { "id": "d", "text": "It has a few hundred followers" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Very high posting volume, no personal details, and auto-generated usernames are common bot patterns."
+      },
+      {
+        "type": "true-false",
+        "prompt": "True or false: A verified badge proves that everything the account posts is accurate.",
+        "options": [
+          { "id": "a", "text": "True" },
+          { "id": "b", "text": "False" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A badge may confirm identity or a paid subscription. It says nothing about whether the posts are true."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 10,
+    "title": "Final Challenge: Can You Spot the Fake?",
+    "summary": "Put everything together. Use all your skills to separate real from fake.",
+    "content": [
+      "This is the final challenge. Each question mixes skills from earlier lessons: headlines, images, sources, authors, dates, and social media.",
+      "Before you answer, run through your checklist: Who made this? When? What is the evidence? What do other trusted sources say?"
+    ],
+    "tips": [
+      "Use SIFT on every question",
+      "Look for the red flags you've learned",
+      "Take your time; checking beats guessing"
+    ],
+    "questions": [
+      {
+        "type": "headline-compare",
+        "prompt": "Which headline is more trustworthy?",
+        "options": [
+          { "id": "a", "text": "Riverton school board votes 5-2 to start classes 30 minutes later next fall" },
+          { "id": "b", "text": "SHOCKING: Schools are secretly making kids sleep less, experts FURIOUS" }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Option A gives a specific vote, a group, and a date. Option B uses shock words, vague 'experts', and no facts."
+      },
+      {
+        "type": "multiple-choice",
+        "prompt": "A photo shows a famous landmark covered in snow, captioned 'Freak blizzard this morning!' It's summer, and a reverse image search finds the photo from a winter 5 years ago. What is it?",
+        "options": [
+          { "id": "a", "text": "Real breaking news" },
+          { "id": "b", "text": "An old photo shared out of context" },
+          { "id": "c", "text": "A weather forecast" },
+          { "id": "d", "text": "A trustworthy source" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "The photo is real but from 5 years ago. Pairing it with 'this morning' makes it misleading."
+      },
+      {
+        "type": "true-false",
+        "prompt": "True or false: If several trusted news outlets independently report the same story, it is more likely to be accurate.",
+        "options": [
+          { "id": "a", "text": "True" },
+          { "id": "b", "text": "False" }
+        ],
+        "correctAnswer": "a",
+        "explanation": "Independent confirmation from multiple reliable sources is one of the best signs a story is accurate."
+      },
+      {
+        "type": "multiple-choice",
+        "prompt": "A website called 'HealthTruthNow' claims a herbal tea cures diabetes. There is no author, no About page, and every article links to a shop selling the tea. What is the biggest problem?",
+        "options": [
+          { "id": "a", "text": "The website has too many articles" },
+          { "id": "b", "text": "No accountability plus a clear money motive" },
+          { "id": "c", "text": "The tea might taste bad" },
+          { "id": "d", "text": "There is no problem" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "No author or About page means no accountability, and the site profits if you believe the claim."
+      },
+      {
+        "type": "multiple-choice",
+        "prompt": "Your group chat shares a screenshot: 'Campus closed Friday due to gas leak!' There's no link and no date. What should you do?",
+        "options": [
+          { "id": "a", "text": "Stay home Friday" },
+          { "id": "b", "text": "Check the university's official website, email, or alert system" },
+          { "id": "c", "text": "Forward it to more group chats" },
+          { "id": "d", "text": "Trust it because your friends shared it" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "A screenshot with no link or date can't be verified. Real campus closures come through official channels."
+      },
+      {
+        "type": "headline-compare",
+        "prompt": "Last one! Which post is more trustworthy?",
+        "options": [
+          { "id": "a", "text": "Anonymous account: 'My cousin's friend says the water supply is POISONED. Spread the word!!'" },
+          { "id": "b", "text": "City Water Department: 'Routine testing completed Oct 3. Results meet all safety standards. Full report linked.'" }
+        ],
+        "correctAnswer": "b",
+        "explanation": "Option B comes from the responsible official source, includes a date, and links evidence. Option A is a second-hand rumor with urgent language."
+      }
+    ]
+  }
+]

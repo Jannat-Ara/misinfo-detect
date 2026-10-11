@@ -1,0 +1,9 @@
+$kind: http-request
+url: 127.0.0.1:8000/instructors/viewProfile
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmdWxsbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJqb2huLmRvZUBiaml0LmVkdSIsInZlcmlmaWVkIjpmYWxzZSwicm9sZSI6InRlYWNoZXIiLCJ1c2VyIjoiNjU1YzFmMGExMzE5MDY1YzJkZGE5NDZhIiwiX192IjowLCJpYXQiOjE3MDEwMDU3NDQsImV4cCI6MTcwMTAwOTM0NH0.no-AwqrjH0CmaKY0T7aXUoORohztNAg1Mfq6Dak_2EU
+settings: {}
+order: 1000

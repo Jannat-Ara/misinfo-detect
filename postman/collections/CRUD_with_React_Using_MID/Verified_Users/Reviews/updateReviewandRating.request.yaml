@@ -1,0 +1,20 @@
+$kind: http-request
+url: 127.0.0.1:8000/reviews/updateReviewandRating
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"user\":\"6505e507cc5ccf642c1e1e86\",\r
+
+    \    \"bookID\":\"650558a923432630cb392e03\",\r
+
+    \    \"reviewID\":\"6507be90380111f2d926a356\",\r
+
+    \    \"reviews\":\"The book is ok, need to improve.\",\r
+
+    \    \"rating\":3.5\r
+
+    }"
+settings: {}
+order: 3000

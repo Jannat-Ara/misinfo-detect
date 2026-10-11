@@ -1,0 +1,7 @@
+$kind: http-request
+url: 127.0.0.1:8000/products/getProductByID?id=64eee252583598d69e8d1c69
+method: GET
+queryParams:
+  id: 64eee252583598d69e8d1c69
+settings: {}
+order: 2000

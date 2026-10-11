@@ -1,0 +1,7 @@
+$kind: http-request
+url: 127.0.0.1:8000/subscriptions/accept?subscriptionId=6564625b01f822e552bc32c5
+method: POST
+queryParams:
+  subscriptionId: 6564625b01f822e552bc32c5
+settings: {}
+order: 1000

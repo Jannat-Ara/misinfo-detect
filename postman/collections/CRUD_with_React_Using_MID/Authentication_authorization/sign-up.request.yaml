@@ -1,0 +1,36 @@
+$kind: http-request
+url: 127.0.0.1:8000/auth/sign-up
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"John Smith\",\r
+
+    \  \"email\": \"johnsmith@example.com\",\r
+
+    \  \"password\": \"John@123\",\r
+
+    \  \"phone\": \"555-987-1111\",\r
+
+    \  \"address\": {\r
+
+    \    \"house\": \"456\",\r
+
+    \    \"road\": \"Tech Avenue\",\r
+
+    \    \"area\": \"Innovation District\",\r
+
+    \    \"city\": \"San Francisco\",\r
+
+    \    \"country\": \"USA\"\r
+
+    \  },\r
+
+    \  \"role\": 1,\r
+
+    \  \"verified\": true\r
+
+    }\r\n"
+settings: {}
+order: 1000

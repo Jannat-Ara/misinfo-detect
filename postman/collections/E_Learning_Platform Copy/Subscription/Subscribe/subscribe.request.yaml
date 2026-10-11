@@ -1,0 +1,18 @@
+$kind: http-request
+url: 127.0.0.1:8000/subscriptions/subscribe
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \r
+
+    \    \"cartId\":\"655f745f8e473d6938a19ace\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmdWxsbmFtZSI6IkRhdmlkIE1pbGxlciIsImVtYWlsIjoiZGF2aWQubWlsbGVyQGdtYWlsLmNvbSIsInZlcmlmaWVkIjpmYWxzZSwicm9sZSI6InN0dWRlbnQiLCJ1c2VyIjp7Il9pZCI6IjY1NWVjMzRkMWM3OTZiNDg0Nzg1ODQ0ZiIsImZ1bGxuYW1lIjoiRGF2aWQgTWlsbGVyIiwiZW1haWwiOiJkYXZpZC5taWxsZXJAZ21haWwuY29tIiwicm9sZSI6InN0dWRlbnQifSwiX192IjowLCJpYXQiOjE3MDEwNTc1NTEsImV4cCI6MTcwMTA2MTE1MX0.GOH1I4dyLg8V4KbhhrAgV_5AAMGV5fr3nbEvdXqzMtk
+settings: {}
+order: 1000

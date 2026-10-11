@@ -1,0 +1,18 @@
+$kind: http-request
+url: https://102h4rlyh1.execute-api.us-east-2.amazonaws.com/dev/carts
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"productId\": \"81acb555-6d0e-4f37-9684-4019f4090328\",\r
+
+    \    \"quantity\": 2\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiYmJhMGEyLWE1ZjYtNGI5Yy1iNjExLWZkNDcxNmQwZWRiNCIsImlhdCI6MTc0NTIwODU0N30.u9X6pLbRj3qy_tJdNPjAm_cgZEjauhy3gsTxywo9ptQ
+settings: {}
+order: 9000
