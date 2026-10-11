@@ -1,7 +1,0 @@
-$kind: http-request
-url: 127.0.0.1:8000/products/findcg?cgpa=3.5
-method: GET
-queryParams:
-  cgpa: "3.5"
-settings: {}
-order: 5000

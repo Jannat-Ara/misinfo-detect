@@ -1,9 +1,0 @@
-$kind: http-request
-url: 127.0.0.1:8000/users/viewUsers
-method: GET
-auth:
-  type: bearer
-  credentials:
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTRiMTEyNjNhMDM1OWY0YzhkY2M0ZDIiLCJmdWxsbmFtZSI6Ik5vcm1hbCBBZG1pbiIsImVtYWlsIjoibm9ybWFsQWRtaW5AYWRtaW5iaml0LmVkdSIsInZlcmlmaWNhdGlvbiI6ZmFsc2UsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwiaWF0IjoxNjk5NDIyOTM4LCJleHAiOjE2OTk0MjY1Mzh9.sm6A7pyQgIRB9ugBf6Li7JKxqcPk9jbvyB9Co1Rz0FA
-settings: {}
-order: 1000

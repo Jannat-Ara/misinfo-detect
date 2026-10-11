@@ -1,7 +1,0 @@
-$kind: http-request
-url: 127.0.0.1:8000/lessons/delete?lessonID=6564a9d5b5cfd62e1648e511
-method: DELETE
-queryParams:
-  lessonID: 6564a9d5b5cfd62e1648e511
-settings: {}
-order: 1000

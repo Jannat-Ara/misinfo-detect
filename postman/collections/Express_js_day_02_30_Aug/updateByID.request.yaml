@@ -1,7 +1,0 @@
-$kind: http-request
-url: 127.0.0.1:8000/products/update?id=101
-method: POST
-queryParams:
-  id: "101"
-settings: {}
-order: 2000

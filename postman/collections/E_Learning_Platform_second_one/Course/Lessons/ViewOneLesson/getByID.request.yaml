@@ -1,5 +1,0 @@
-$kind: http-request
-url: 127.0.0.1:8000/lessons/getByID/654dc107eb27580d7de3ebc3
-method: GET
-settings: {}
-order: 1000

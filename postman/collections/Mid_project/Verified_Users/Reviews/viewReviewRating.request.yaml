@@ -1,5 +1,0 @@
-$kind: http-request
-url: 127.0.0.1:8000/reviews/viewReviewRating/6509816c76f4da0a9cc7034a
-method: GET
-settings: {}
-order: 2000

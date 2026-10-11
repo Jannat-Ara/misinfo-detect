@@ -1,7 +1,0 @@
-$kind: http-request
-url: 127.0.0.1:8000/products/view?productID=65aa4ad1589c6fa2db1b4ece
-method: GET
-queryParams:
-  productID: 65aa4ad1589c6fa2db1b4ece
-settings: {}
-order: 2000

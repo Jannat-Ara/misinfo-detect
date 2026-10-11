@@ -1,7 +1,0 @@
-$kind: http-request
-url: 127.0.0.1:8000/products/deleteProductByID?id=64eee252583598d69e8d1cc7
-method: DELETE
-queryParams:
-  id: 64eee252583598d69e8d1cc7
-settings: {}
-order: 3000

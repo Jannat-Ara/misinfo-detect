@@ -1,9 +1,0 @@
-$kind: http-request
-url: 127.0.0.1:8000/quiz/getAll
-method: GET
-auth:
-  type: bearer
-  credentials:
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTUyZTVmOTYwYmIwYWJjMjM4N2VhN2YiLCJmdWxsbmFtZSI6Ikluc3RydWN0b3IgTmFtZSIsImVtYWlsIjoiaW5zdHJ1Y3Rvci5uYW1lQGJqaXQuZWR1IiwidmVyaWZpZWQiOnRydWUsInJvbGUiOiJ0ZWFjaGVyIiwidXNlciI6bnVsbCwiX192IjowLCJpYXQiOjE2OTk5NDAxMzIsImV4cCI6MTY5OTk0MzczMn0.Z3cOxKpcptKoWSodarUc8l8qJfWYejBc9M7q3gKuLyw
-settings: {}
-order: 1000

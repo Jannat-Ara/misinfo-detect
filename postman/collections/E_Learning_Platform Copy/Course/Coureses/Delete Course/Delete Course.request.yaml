@@ -1,5 +1,0 @@
-$kind: http-request
-url: 127.0.0.1:8000/courses/delete/655dbdda46750ac97bd709ae
-method: DELETE
-settings: {}
-order: 1000

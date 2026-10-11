@@ -1,7 +1,0 @@
-$kind: http-request
-url: https://102h4rlyh1.execute-api.us-east-2.amazonaws.com/dev/products
-method: PATCH
-auth:
-  type: noauth
-settings: {}
-order: 6000

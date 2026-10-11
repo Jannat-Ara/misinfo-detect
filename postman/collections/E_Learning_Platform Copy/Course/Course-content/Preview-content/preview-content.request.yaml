@@ -1,5 +1,0 @@
-$kind: http-request
-url: 127.0.0.1:8000/video/view/What_is_Java.mp4
-method: GET
-settings: {}
-order: 1000

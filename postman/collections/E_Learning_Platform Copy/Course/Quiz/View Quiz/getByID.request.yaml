@@ -1,9 +1,0 @@
-$kind: http-request
-url: 127.0.0.1:8000/quiz/getById/6552f3d13c61e26d052993b3
-method: GET
-auth:
-  type: bearer
-  credentials:
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTUyZTVmOTYwYmIwYWJjMjM4N2VhN2YiLCJmdWxsbmFtZSI6Ikluc3RydWN0b3IgTmFtZSIsImVtYWlsIjoiaW5zdHJ1Y3Rvci5uYW1lQGJqaXQuZWR1IiwidmVyaWZpZWQiOnRydWUsInJvbGUiOiJ0ZWFjaGVyIiwidXNlciI6bnVsbCwiX192IjowLCJpYXQiOjE2OTk5NDExMjEsImV4cCI6MTY5OTk0NDcyMX0.IX9mmo2T63evyF576laKo3pPuyH5BTBpCljE19ZzajI
-settings: {}
-order: 2000

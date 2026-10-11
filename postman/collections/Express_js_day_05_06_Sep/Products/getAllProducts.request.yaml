@@ -1,8 +1,0 @@
-$kind: http-request
-url: 127.0.0.1:8000/products/all?page=2&limit=5
-method: GET
-queryParams:
-  page: "2"
-  limit: "5"
-settings: {}
-order: 1000

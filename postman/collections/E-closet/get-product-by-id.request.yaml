@@ -1,7 +1,0 @@
-$kind: http-request
-url: https://102h4rlyh1.execute-api.us-east-2.amazonaws.com/dev/products/41a2ab3d-6ca3-4f99-bc0f-55a07e2a14c5
-method: GET
-auth:
-  type: noauth
-settings: {}
-order: 2000

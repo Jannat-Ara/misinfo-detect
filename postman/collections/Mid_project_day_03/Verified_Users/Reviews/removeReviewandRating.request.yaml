@@ -1,8 +1,0 @@
-$kind: http-request
-url: 127.0.0.1:8000/review/removeReviewandRating
-method: DELETE
-body:
-  type: json
-  content: ""
-settings: {}
-order: 4000
