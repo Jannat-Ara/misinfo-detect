@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-// Connects to MongoDB, then runs the callback (used to start the server)
+
 export const databaseConnection = async (callback: () => void): Promise<void> => {
   const url = process.env.DATABASE_URL;
 
