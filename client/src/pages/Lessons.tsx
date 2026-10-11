@@ -9,17 +9,16 @@ import { usePlayer } from "../hooks/usePlayer";
 import type { LessonSummary, PlayerScores } from "../types";
 import styles from "./Lessons.module.css";
 
-
 export default function Lessons() {
   const { playerName } = usePlayer();
-
 
   const [lessons, setLessons] = useState<LessonSummary[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [scores, setScores] = useState<{ player: string; data: PlayerScores } | null>(null);
 
+  // Load all lessons once
   useEffect(() => {
-    let cancelled = false; 
+    let cancelled = false;
 
     api
       .getLessons()
@@ -31,13 +30,13 @@ export default function Lessons() {
       });
 
     return () => {
-      cancelled = true; 
+      cancelled = true;
     };
-  }, []); 
+  }, []);
 
- 
+  // Load this player's best scores
   useEffect(() => {
-    if (!playerName) return; 
+    if (!playerName) return;
     let cancelled = false;
 
     api
@@ -52,7 +51,7 @@ export default function Lessons() {
     return () => {
       cancelled = true;
     };
-  }, [playerName]); 
+  }, [playerName]);
 
   const loading = lessons === null && error === null;
 
@@ -72,9 +71,6 @@ export default function Lessons() {
     );
   }
 
-
-  const best = scores && scores.player === playerName ? scores.data.bestByLesson : {};
-
   if (lessons.length === 0) {
     return (
       <Page>
@@ -84,13 +80,19 @@ export default function Lessons() {
     );
   }
 
+  const best = scores && scores.player === playerName ? scores.data.bestByLesson : {};
 
-  const doneCount = lessons.filter((l) => best[l.lessonNumber]).length;
-  const nextNumber = lessons.find((l) => !best[l.lessonNumber])?.lessonNumber;
+  // A lesson only counts as done if they got at least 1 right
+  const isDone = (lessonNumber: number) => (best[lessonNumber]?.score ?? 0) > 0;
+
+  const doneCount = lessons.filter((l) => isDone(l.lessonNumber)).length;
+  const nextNumber = lessons.find((l) => !isDone(l.lessonNumber))?.lessonNumber;
 
   const statusFor = (lessonNumber: number): LessonStatus => {
     const result = best[lessonNumber];
-    if (result) return { kind: "done", score: result.score, total: result.total };
+    if (result && isDone(lessonNumber)) {
+      return { kind: "done", score: result.score, total: result.total };
+    }
     if (lessonNumber === nextNumber) return { kind: "next" };
     return { kind: "todo" };
   };
