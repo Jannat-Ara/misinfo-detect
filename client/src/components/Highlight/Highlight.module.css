@@ -1,0 +1,26 @@
+.mark {
+  color: inherit;
+  padding: 0 4px;
+  border-radius: 3px;
+  background: linear-gradient(var(--highlight), var(--highlight)) no-repeat;
+  background-size: 100% 100%;
+  box-decoration-break: clone; 
+  -webkit-box-decoration-break: clone;
+}
+
+.mark sup {
+  font-size: 0.5em;
+  margin-left: 2px;
+}
+
+
+.swipe {
+  background-size: 0% 100%;
+  animation: swipe 0.45s ease-out forwards;
+}
+
+@keyframes swipe {
+  to {
+    background-size: 100% 100%;
+  }
+}

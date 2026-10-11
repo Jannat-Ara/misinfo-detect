@@ -1,0 +1,45 @@
+.runner {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+.back {
+  font-weight: 600;
+  font-size: 15px;
+}
+.lessonName {
+  font-weight: 700;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.count {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.messages:empty {
+  display: none;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}

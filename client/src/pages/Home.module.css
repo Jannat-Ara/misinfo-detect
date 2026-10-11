@@ -1,0 +1,35 @@
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 56px;
+  align-items: center;
+}
+
+.copy {
+  flex: 1 1 460px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(40px, 6vw, 60px);
+  line-height: 1.02;
+  font-weight: 800;
+  font-stretch: 120%;
+  letter-spacing: -0.02em;
+  max-width: 12ch;
+}
+
+.lead {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: 34em;
+}

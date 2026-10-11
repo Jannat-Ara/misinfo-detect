@@ -2,8 +2,10 @@ import type { RequestHandler } from "express";
 import { Attempt } from "../models/Attempt.js";
 import { sendResponse } from "../common/sendResponse.js";
 import { HTTP_STATUS } from "../constants/httpStatus.js";
+import { Lesson } from "../models/Lesson.js";
+import mongoose from "mongoose";
 
-// GET /api/attempts?player=Raya: one person's score history, newest first
+
 export const getPlayerAttempts: RequestHandler = async (req, res) => {
   const player = typeof req.query.player === "string" ? req.query.player.trim() : "";
   if (!player) {
@@ -60,4 +62,81 @@ export const getLeaderboard: RequestHandler = async (_req, res) => {
   ]);
 
   sendResponse(res, HTTP_STATUS.OK, "Leaderboard fetched.", leaderboard);
+};
+// POST /api/attempts
+
+export const createAttempt: RequestHandler = async (req, res) => {
+  const playerName = String(req.body?.playerName ?? "").trim();
+  const lessonNumber = Number(req.body?.lessonNumber);
+  const answers: unknown = req.body?.answers;
+
+  // Validate the request before touching the database
+  if (!playerName) {
+    sendResponse(res, HTTP_STATUS.BAD_REQUEST, "playerName is required.");
+    return;
+  }
+  if (Number.isNaN(lessonNumber)) {
+    sendResponse(res, HTTP_STATUS.BAD_REQUEST, "lessonNumber must be a number.");
+    return;
+  }
+  if (!Array.isArray(answers)) {
+    sendResponse(res, HTTP_STATUS.BAD_REQUEST, "answers must be an array.");
+    return;
+  }
+
+  // Load the lesson WITH the correct answers (they're hidden by default)
+  const lesson = await Lesson.findOne({ lessonNumber }).select(
+    "+questions.correctAnswer +questions.explanation"
+  );
+  if (!lesson) {
+    sendResponse(res, HTTP_STATUS.NOT_FOUND, `Lesson ${lessonNumber} not found.`);
+    return;
+  }
+
+  // Map each questionId to the option the player picked
+  const selectedById = new Map<string, string>();
+  for (const a of answers) {
+    if (a && mongoose.isValidObjectId(a.questionId) && typeof a.selected === "string") {
+      selectedById.set(String(a.questionId), a.selected);
+    }
+  }
+
+  // Grade every question in the lesson; an unanswered question counts as wrong
+  const results = lesson.questions.map((q) => {
+    const id = q._id!.toString();
+    const selected = selectedById.get(id) ?? "";
+    return {
+      questionId: id,
+      prompt: q.prompt,
+      selected,
+      correct: selected === q.correctAnswer,
+      correctAnswer: q.correctAnswer,
+      explanation: q.explanation,
+    };
+  });
+
+  const score = results.filter((r) => r.correct).length;
+  const total = results.length;
+
+  // Save the attempt: this is what the leaderboard reads later
+  await Attempt.create({
+    playerName,
+    lessonNumber,
+    score,
+    total,
+    answers: results.map((r) => ({
+      questionId: r.questionId,
+      selected: r.selected || "(none)",
+      correct: r.correct,
+    })),
+  });
+
+  sendResponse(res, HTTP_STATUS.CREATED, "Attempt saved.", {
+    playerName,
+    lessonNumber,
+    score,
+    total,
+    percentage: total ? Math.round((score / total) * 100) : 0,
+    results,
+  });
 };

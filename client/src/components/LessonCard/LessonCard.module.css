@@ -1,0 +1,58 @@
+.card {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  height: 100%;
+  padding: 18px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  text-decoration: none;
+  color: var(--ink);
+}
+.card:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.next {
+  border: 2px solid var(--ink);
+}
+
+.number {
+  flex: none;
+  width: 28px;
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--muted);
+}
+.next .number {
+  color: var(--ink);
+}
+
+.text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.title {
+  font-size: 19px;
+}
+.summary {
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.status {
+  flex: none;
+  font-weight: 700;
+}
+.done {
+  color: var(--verified);
+}
+.todo {
+  font-weight: 400;
+  color: var(--muted);
+}

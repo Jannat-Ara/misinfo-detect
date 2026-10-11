@@ -1,0 +1,17 @@
+.status {
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  line-height: 1.5;
+}
+.loading {
+  color: var(--muted);
+}
+.error {
+  border-color: var(--flagged);
+  background: var(--flagged-bg);
+}
+.empty {
+  border-style: dashed;
+}

@@ -1,0 +1,47 @@
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 800;
+  font-stretch: 118%;
+  letter-spacing: -0.015em;
+}
+
+.lead {
+  margin: 0;
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.progress {
+  flex: 0 1 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.progressLabel {
+  font-weight: 600;
+}
+
+/* 2 columns on desktop, 1 on phones */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr));
+  gap: 16px;
+}

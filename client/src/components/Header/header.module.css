@@ -1,0 +1,76 @@
+/* .header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  display: flex;
+  flex-wrap: wrap; /* on phones the menu moves under the logo */
+  /* gap: 12px; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+/* }  */
+
+.header {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  font-stretch: 118%;
+  font-size: 21px;
+  letter-spacing: -0.01em;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.link {
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.link:hover,
+.active {
+  background: var(--tint);
+}
+
+.player {
+  margin-left: 8px;
+  font-size: 15px;
+  color: var(--muted);
+}
+.player strong {
+  color: var(--ink);
+}
+
+.switch {
+  margin-left: 10px;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.switch:hover {
+  background: var(--tint);
+}

@@ -1,0 +1,45 @@
+.item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  display: flex;
+  gap: 16px;
+}
+
+.icon {
+  flex: none;
+}
+.iconRight {
+  fill: var(--verified);
+}
+.iconWrong {
+  fill: var(--flagged);
+}
+.iconMark {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+.prompt {
+  font-size: 18px;
+}
+.muted {
+  color: var(--muted);
+}
+.explanation {
+  margin: 4px 0 0;
+  font-family: var(--font-read);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--muted);
+}

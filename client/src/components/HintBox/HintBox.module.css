@@ -1,0 +1,51 @@
+.button {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1.5px dashed var(--muted);
+  border-radius: 10px;
+  background: none;
+  font: inherit;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+}
+.button:hover:not(:disabled) {
+  background: var(--tint);
+}
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.icon {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+.hint {
+  margin: 0;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: #fff7d1;
+  font-size: 17px;
+  line-height: 1.5;
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+.label {
+  flex: none;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--highlight);
+  font-size: 13px;
+  font-weight: 800;
+}

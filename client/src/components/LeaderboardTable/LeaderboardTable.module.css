@@ -1,0 +1,55 @@
+.wrap {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 8px 8px 4px;
+  overflow-x: auto; 
+}
+
+.table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+}
+
+.caption {
+  text-align: left;
+  padding: 4px 16px 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.table th {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1.5px solid var(--ink);
+}
+.table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--tint);
+  font-size: 17px;
+}
+
+.rankCol {
+  width: 64px;
+}
+.rank {
+  font-weight: 800;
+}
+.table .num {
+  text-align: right;
+}
+.table td.num {
+  font-weight: 800;
+}
+
+
+.me {
+  background: var(--highlight);
+}
+.me td {
+  font-weight: 800;
+}

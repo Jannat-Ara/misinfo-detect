@@ -13,7 +13,7 @@ const QUESTION_FIELDS = ["type", "prompt", "options", "correctAnswer", "explanat
 
 /* ==================== Read (used by the quiz pages) ==================== */
 
-// GET /api/lessons: list for the lesson map (no questions)
+// GET /api/lessons: list for the lesson map 
 export const getAllLessons: RequestHandler = async (_req, res) => {
   const lessons = await Lesson.find()
     .select("lessonNumber title summary content tips questions")
@@ -21,7 +21,7 @@ export const getAllLessons: RequestHandler = async (_req, res) => {
   sendResponse(res, HTTP_STATUS.OK, "Lessons fetched.", lessons);
 };
 
-// GET /api/lessons/:number: one lesson for students (answers hidden)
+// GET /api/lessons/:number: one lesson for students 
 export const getLessonByNumber: RequestHandler = async (req, res) => {
   const lessonNumber = getLessonNumber(req, res);
   if (lessonNumber === null) return;
@@ -34,7 +34,7 @@ export const getLessonByNumber: RequestHandler = async (req, res) => {
   sendResponse(res, HTTP_STATUS.OK, "Lesson fetched.", lesson);
 };
 
-// GET /api/lessons/:number/full: one lesson including answers (for managing content)
+// GET /api/lessons/:number/full: one lesson including answers 
 export const getLessonWithAnswers: RequestHandler = async (req, res) => {
   const lessonNumber = getLessonNumber(req, res);
   if (lessonNumber === null) return;
@@ -65,8 +65,8 @@ export const updateLesson: RequestHandler = async (req, res) => {
   if (lessonNumber === null) return;
 
   const lesson = await Lesson.findOneAndUpdate({ lessonNumber }, req.body ?? {}, {
-    new: true,            // return the updated document
-    runValidators: true,  // apply schema rules to updates too
+    new: true,          
+    runValidators: true,  
   }).select(WITH_ANSWERS);
 
   if (!lesson) {

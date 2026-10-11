@@ -1,0 +1,39 @@
+.badge {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px 6px 10px;
+  border-radius: 999px;
+  border: 2px solid currentColor;
+  font-weight: 800;
+  font-size: 16px;
+}
+.label {
+  font-weight: 600;
+}
+
+.icon {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+
+.top {
+  color: var(--ink);
+  background: var(--highlight);
+}
+.high {
+  color: var(--verified);
+  background: var(--verified-bg);
+}
+.mid {
+  color: var(--ink);
+  background: var(--surface);
+}
+.low {
+  color: var(--flagged);
+  background: var(--flagged-bg);
+}

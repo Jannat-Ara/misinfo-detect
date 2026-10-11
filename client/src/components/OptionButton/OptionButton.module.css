@@ -1,0 +1,87 @@
+.option {
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface);
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  cursor: pointer;
+}
+.option:hover:not(:disabled) {
+  border-color: var(--muted);
+}
+.option:disabled {
+  cursor: default;
+}
+
+.picked {
+  background: var(--tile);
+  border-color: var(--ink);
+}
+.right {
+  background: var(--verified-bg);
+  border-color: var(--verified);
+}
+.wrong {
+  background: var(--flagged-bg);
+  border-color: var(--flagged);
+}
+
+.card {
+  min-height: 180px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: space-between;
+}
+.cardLabel {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+}
+.headline {
+  font-family: var(--font-read);
+  font-size: 21px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+
+.row {
+  min-height: 60px;
+  padding: 16px 18px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.letter {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 15px;
+}
+.text {
+  flex: 1;
+}
+
+
+.tag {
+  flex: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+.right .tag {
+  color: var(--verified);
+}
+.wrong .tag {
+  color: var(--flagged);
+}

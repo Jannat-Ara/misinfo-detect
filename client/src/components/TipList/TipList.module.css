@@ -1,0 +1,26 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  line-height: 1.45;
+}
+
+.item {
+  display: flex;
+  gap: 10px;
+}
+
+
+.item::before {
+  content: "";
+  flex: none;
+  width: 10px;
+  height: 10px;
+  margin-top: 7px;
+  border-radius: 2px;
+  background: var(--highlight);
+  outline: 1.5px solid var(--ink);
+}
