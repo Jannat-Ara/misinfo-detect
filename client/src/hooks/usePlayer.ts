@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { PlayerContext } from "../context/PlayerContext";
-import type { PlayerContextValue } from "../context/PlayerContext"
+import { PlayerContext } from "../context/playerContext";
+import type { PlayerContextValue } from "../context/playerContext"
 
 
 export function usePlayer(): PlayerContextValue {

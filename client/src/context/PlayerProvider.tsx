@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { ReactNode } from "react";
-import { PlayerContext } from "./PlayerContext";
+import { PlayerContext } from "./playerContext";
 
 
 const STORAGE_KEY = "spot-the-fake:player";
