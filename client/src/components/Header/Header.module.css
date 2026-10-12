@@ -43,10 +43,16 @@
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
+  color:blanchedalmond;
+  font-size: 19px;
+  line-height: 1.5;
+  max-width: 34em;
 }
 .link:hover,
 .active {
-  background: var(--tint);
+  color: var(--muted);
+  background: var(--surface);
+  
 }
 
 .player {

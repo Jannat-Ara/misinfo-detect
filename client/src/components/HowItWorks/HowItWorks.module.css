@@ -1,56 +1,302 @@
+/* Darker strip behind the section */
 .band {
-  background: var(--surface);
-  border-top: 1px solid var(--line);
+  padding: 72px 20px;
+  background: rgba(0, 0, 0, 0.12);
 }
 
 .inner {
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 56px 24px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 40px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+/* Small yellow label above the heading */
+.eyebrow {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #ffe45e;
+  color: #18203a;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .heading {
   margin: 0;
-  font-size: 30px;
+  font-size: clamp(30px, 4vw, 40px);
   font-weight: 800;
-  font-stretch: 112%;
+  color: #ffffff;
 }
 
+/* Three cards in a row, joined by a dashed line */
 .steps {
+  position: relative;
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
-  gap: 32px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+/* Darker strip behind the section */
+.band {
+  padding: 72px 20px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+/* Small yellow label above the heading */
+.eyebrow {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #ffe45e;
+  color: #18203a;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.heading {
+  margin: 0;
+  font-size: clamp(30px, 4vw, 40px);
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* Three cards in a row, joined by a dashed line */
+.steps {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.steps::before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  left: 12%;
+  right: 12%;
+  border-top: 2px dashed rgba(255, 255, 255, 0.45);
+  z-index: 0;
 }
 
 .step {
+  position: relative;
+  z-index: 1;
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px 24px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: fadeUp 0.6s ease both;
+}
+
+.step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 0 rgba(0, 0, 0, 0.15), 0 20px 36px rgba(0, 0, 0, 0.2);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Rounded square holding the icon */
+.icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: #fff4b8;
+  color: #18203a;
+  transition: transform 0.2s ease;
+}
+
+.icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.step:hover .icon {
+  transform: rotate(-6deg) scale(1.08);
 }
 
 .number {
-  flex: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid var(--ink);
-  display: grid;
-  place-items: center;
+  font-size: 13px;
   font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b4445;
 }
 
 .title {
-  margin: 0 0 6px;
-  font-size: 19px;
+  margin: 4px 0 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #18203a;
 }
 
 .text {
   margin: 0;
-  color: var(--muted);
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5470;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Phones: one card per row, hide the connecting line */
+@media (max-width: 800px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .steps::before {
+    display: none;
+  }
+}
+
+/* Users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  .step,
+  .icon {
+    animation: none;
+    transition: none;
+  }
+  .step:hover {
+    transform: none;
+  }
+}
+
+.step {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px 24px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: fadeUp 0.6s ease both;
+}
+
+.step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 0 rgba(0, 0, 0, 0.15), 0 20px 36px rgba(0, 0, 0, 0.2);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Rounded square holding the icon */
+.icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: #fff4b8;
+  color: #18203a;
+  transition: transform 0.2s ease;
+}
+
+.icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.step:hover .icon {
+  transform: rotate(-6deg) scale(1.08);
+}
+
+.number {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a5759;
+}
+
+.title {
+  margin: 4px 0 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #18203a;
+}
+
+.text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5470;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Phones: one card per row, hide the connecting line */
+@media (max-width: 800px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .steps::before {
+    display: none;
+  }
+}
+
+/* Users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  .step,
+  .icon {
+    animation: none;
+    transition: none;
+  }
+  .step:hover {
+    transform: none;
+  }
 }

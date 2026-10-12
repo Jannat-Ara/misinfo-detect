@@ -38,7 +38,7 @@
 }
 .error {
   color: var(--flagged);
-  font-weight: 600;
+  font-weight: 650;
 }
 .anon {
   display: flex;

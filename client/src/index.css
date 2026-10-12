@@ -1,18 +1,19 @@
 
 
 :root {
-  --ground: #f2f4f8;  
-  --surface: #ffffff;   
-  --ink: #18203a;        
+  --ground: #92575b;  
+  --surface: #f7f7f7;   
+  --ink: #0d111f;        
   --ink-hover: #2c3760;
-  --muted: #4a5470;    
-  --line: #d5dae5;       
+  --ink-color: blanchedalmond;
+  --muted: #0f0b0d;    
+  --line: #e5d5de;       
   --tint: #e3e7f0;       
   --tile: #eef1f7;        
   --highlight: #ffe45e;   
   --verified: #1e7566;    
   --verified-bg: #e3f3ef;
-  --flagged: #b5400f;     
+  --flagged: #81190c;     
   --flagged-bg: #fbeae2;
   --focus: #3b6fd9;
 

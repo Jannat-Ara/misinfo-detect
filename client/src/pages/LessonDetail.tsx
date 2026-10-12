@@ -65,12 +65,17 @@ export default function LessonDetail() {
 
   return (
     <Page>
+  <nav className={styles.crumbs} aria-label="Breadcrumb">
+        <Link to="/lessons" className={styles.backLink}>
+          ← All lessons
+        </Link>
+        <span aria-hidden="true">/</span>
+        <span>Lesson {lesson.lessonNumber}</span>
+      </nav>
+
       <header className={styles.hero}>
         <LessonIllustration lessonNumber={lesson.lessonNumber} size={120} framed />
         <div className={styles.heading}>
-          <Link to="/lessons" className={styles.crumb}>
-            Lesson {lesson.lessonNumber}
-          </Link>
           <h1 className={styles.title}>{lesson.title}</h1>
           <p className={styles.summary}>{lesson.summary}</p>
         </div>

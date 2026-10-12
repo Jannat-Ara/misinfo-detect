@@ -1,0 +1,137 @@
+
+/* Top of the page: drawing on the left, title on the right */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line, #d5dae5);
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.crumbs{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--muted, #4a5470);
+}
+.crumbs:hover {
+  color: var(--ink, #18203a);
+  text-decoration: none;
+}
+
+.backLink{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px; 
+  padding: 0 22px;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+.backLink:hover {
+  text-decoration: none;
+  background: whitesmoke;
+}
+    
+
+
+.title {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.15;
+  color: var(--ink, #18203a);
+}
+
+.summary {
+  margin: 0;
+  font-size: 18px;
+  color: var(--muted, #4a5470);
+  max-width: 60ch;
+}
+
+
+.body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 40px;
+  align-items: start;
+  margin-top: 32px;
+}
+
+.article {
+  font-family: var(--font-read, Georgia, serif);
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--ink-color);
+  max-width: 65ch;
+ text-align: justify;
+  hyphens: auto;
+}
+
+.article p {
+  margin: 0 0 18px;
+}
+
+/* Red flags card stays in view while scrolling */
+.aside {
+  position: sticky;
+  top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.asideTitle {
+  margin: 0;
+  font-size: 20px;
+  color: var(--ink, #18203a);
+}
+
+.quizBox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line, #d5dae5);
+}
+
+.count {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--muted, #4a5470);
+}
+
+
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .body {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .aside {
+    position: static;
+  }
+}
