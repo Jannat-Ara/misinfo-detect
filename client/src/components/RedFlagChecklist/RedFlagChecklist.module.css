@@ -1,0 +1,131 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.counterRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.counter {
+  font-size: 14px;
+  font-weight: 800;
+  color: #4a5470;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d5dae5;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.dotOn {
+  background: #ffd23f;
+  transform: scale(1.25);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Each red flag is a clickable row */
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #e3e7f0;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #18203a;
+  font: inherit;
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.item:hover {
+  border-color: #ffd23f;
+  transform: translateX(3px);
+}
+
+.item:focus-visible {
+  outline: 3px solid #3b6fd9;
+  outline-offset: 2px;
+}
+
+.box {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+  border: 2px solid #18203a;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 900;
+  color: #18203a;
+  transition: background 0.2s ease;
+}
+
+/* Yellow highlighter sweeps across the text when ticked */
+.label {
+  background-image: linear-gradient(transparent 55%, #ffe45e 55%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.45s ease;
+}
+
+.on {
+  border-color: #ffd23f;
+}
+
+.on .box {
+  background: #ffe45e;
+  animation: pop 0.35s cubic-bezier(0.3, 1.6, 0.5, 1);
+}
+
+.on .label {
+  background-size: 100% 100%;
+}
+
+.allDone {
+  margin: 4px 0 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #e3f3ef;
+  color: #1e7566;
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+  animation: pop 0.4s cubic-bezier(0.3, 1.6, 0.5, 1);
+}
+
+@keyframes pop {
+  0%   { transform: scale(0.6); }
+  100% { transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dot, .item, .box, .label { transition: none; }
+  .on .box, .allDone { animation: none; }
+}

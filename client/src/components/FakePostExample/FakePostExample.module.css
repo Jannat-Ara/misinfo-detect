@@ -61,5 +61,5 @@
   flex-direction: column;
   gap: 6px;
   line-height: 1.45;
-  color:var(--ink-color);
+  color:var(--muted);
 }

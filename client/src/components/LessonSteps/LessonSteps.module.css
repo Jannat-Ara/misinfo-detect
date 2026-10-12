@@ -1,0 +1,178 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* "Part 2 of 5" with a bar */
+.progressRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.progressText {
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #18203a;
+}
+
+.track {
+  flex: 1;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(24, 32, 58, 0.12);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ffd23f, #ffe45e);
+  transition: width 0.5s cubic-bezier(0.3, 1.3, 0.5, 1);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Each part of the lesson is a white card that slides in */
+.card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 22px 24px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 4px 0 rgba(24, 32, 58, 0.08);
+  animation: slideIn 0.45s cubic-bezier(0.2, 1.2, 0.4, 1) both;
+}
+
+.badge {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #18203a;
+  color: #ffe45e;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.text {
+  margin: 0;
+  font-family: var(--font-read, Georgia, serif);
+  font-size: 18px;
+  line-height: 1.7;
+  color: #18203a;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Big chunky game-style button */
+.next {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 26px;
+  border: none;
+  border-radius: 14px;
+  background: #18203a;
+  color: #ffffff;
+  font: inherit;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 5px 0 #000000;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.next:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #000000;
+}
+
+.next:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #000000;
+}
+
+.next:focus-visible,
+.skip:focus-visible {
+  outline: 3px solid #3b6fd9;
+  outline-offset: 3px;
+}
+
+.arrow {
+  display: inline-block;
+  animation: nudge 1s ease-in-out infinite;
+}
+
+.skip {
+  padding: 8px 4px;
+  border: none;
+  background: none;
+  color: #18203a;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* "Nice work" message */
+.done {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 16px 20px;
+  border-radius: 16px;
+  background: #e3f3ef;
+  color: #1e7566;
+  font-weight: 700;
+  animation: slideIn 0.45s ease both;
+}
+
+.star {
+  font-size: 24px;
+  color: #ffb800;
+  animation: spinPop 0.7s cubic-bezier(0.3, 1.6, 0.5, 1) both;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(18px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes nudge {
+  0%, 100% { transform: translateX(0); }
+  50%      { transform: translateX(5px); }
+}
+
+@keyframes spinPop {
+  from { transform: scale(0) rotate(-180deg); }
+  to   { transform: scale(1) rotate(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card, .done, .star, .arrow { animation: none; }
+  .fill, .next { transition: none; }
+}

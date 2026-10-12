@@ -4,7 +4,8 @@ import Page from "../components/Page/Page";
 import Card from "../components/Card/Card";
 import Button from "../components/Button/Button";
 import LessonIllustration from "../components/LessonIllustration/LessonIllustration";
-import TipsList from "../components/TipList/TipsList";
+import LessonSteps from "../components/LessonSteps/LessonSteps";
+import RedFlagChecklist from "../components/RedFlagChecklist/RedFlagChecklist";
 import StatusMessage from "../components/StatusMessage/StatusMessage";
 import { api } from "../api";
 import type { Lesson } from "../types";
@@ -15,7 +16,8 @@ export default function LessonDetail() {
 
   const [loaded, setLoaded] = useState<Lesson | null>(null);
   const [failed, setFailed] = useState<{ lessonNumber: number; message: string } | null>(null);
-
+  // Which lesson the player finished reading (so it resets on a new lesson)
+  const [finishedFor, setFinishedFor] = useState<number | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -34,7 +36,6 @@ export default function LessonDetail() {
       cancelled = true;
     };
   }, [lessonNumber]);
-
 
   const lesson = loaded?.lessonNumber === lessonNumber ? loaded : null;
   const error = failed?.lessonNumber === lessonNumber ? failed.message : null;
@@ -62,10 +63,11 @@ export default function LessonDetail() {
   }
 
   const questionCount = lesson.questions.length;
+  const finishedReading = finishedFor === lesson.lessonNumber || lesson.content.length <= 1;
 
   return (
     <Page>
-  <nav className={styles.crumbs} aria-label="Breadcrumb">
+      <nav className={styles.crumbs} aria-label="Breadcrumb">
         <Link to="/lessons" className={styles.backLink}>
           ← All lessons
         </Link>
@@ -82,18 +84,19 @@ export default function LessonDetail() {
       </header>
 
       <div className={styles.body}>
-        <article className={styles.article}>
-          {lesson.content.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-        </article>
+        {/* key resets the steps when the player moves to another lesson */}
+        <LessonSteps
+          key={lesson.lessonNumber}
+          paragraphs={lesson.content}
+          onFinish={() => setFinishedFor(lesson.lessonNumber)}
+        />
 
         <Card as="aside" className={styles.aside} aria-labelledby="red-flags">
           <h2 id="red-flags" className={styles.asideTitle}>
             Red flags to look for
           </h2>
-          <TipsList tips={lesson.tips} />
-          <div className={styles.quizBox}>
+          <RedFlagChecklist key={lesson.lessonNumber} tips={lesson.tips} />
+          <div className={finishedReading ? `${styles.quizBox} ${styles.ready}` : styles.quizBox}>
             <p className={styles.count}>
               {questionCount} {questionCount === 1 ? "question" : "questions"}
             </p>

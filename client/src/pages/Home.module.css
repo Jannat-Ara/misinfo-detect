@@ -30,6 +30,6 @@
   margin: 0;
   font-size: 19px;
   line-height: 1.5;
-  color:var(--ink-color);
+  color:var(--muted);
   max-width: 34em;
 }

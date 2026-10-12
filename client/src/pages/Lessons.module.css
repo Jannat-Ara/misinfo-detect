@@ -23,7 +23,7 @@
 .lead {
   margin: 0;
   font-size: 18px;
-  color:var(--ink-color)
+  color:var(--muted)
 }
 
 .progress {
